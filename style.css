@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(63, 63, 63);
+  background: url(./pictures/balls.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+@font-face {
+  font-family: old;
+  src: url(./old_school_united_shadow_italic.ttf);
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b6b6b670;
+  backdrop-filter: blur(50px);
+  border: 2px solid yellow;
+  border-left: 0;
+  border-right: 2px solid yellow;
+  border-top: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+  margin-left: 50px;
+  font-family: old;
+  color: #fff;
+  font-size: 20px;
+}
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right h1 {
+  font-family: gym;
+  color: yellow;
+  padding-top: 10px;
+  font-family: old;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+.offcanvas-title {
+  color: #fff;
+  font-family: old;
+}
+.logo {
+  font-size: 40px;
+}
+#home {
+  /* background: url(./pictures/balls.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+  padding-bottom: 100px;
+}
+/* Home stage */
+.home-body {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.home-body img {
+  height: 400px;
+  width: 400px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 30px 30px 20px yellow;
+}
+.name {
+  color: yellow;
+  font-family: old;
+}
+.name h1 {
+  line-height: 20px;
+  font-size: 3em;
+  white-space: wrap;
+}
+.name p {
+  font-size: 20px;
+  line-height: 5px;
+}
+.name h4 {
+  font-size: 25px;
+  text-align: right;
+}
+/* About Stage */
+#about {
+  background-color: #b6b6b670;
+  backdrop-filter: blur(50px);
+}
+.context {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.context h1 {
+  font-family: old;
+  font-size: 50px;
+  text-align: center;
+  color: yellow;
+}
+.context p {
+  font-size: 25px;
+  font-weight: 600;
+  color: yellow;
+}
+/* Picture stage */
+#picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./pictures/field.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px;
+}
+#picture img {
+  height: 500px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 2px solid yellow;
+}
+/* Contacts */
+#contact {
+  background-color: #b6b6b670;
+  backdrop-filter: blur(50px);
+  text-align: center;
+}
+#contact h1 {
+  font-family: old;
+  font-size: 50px;
+  color: yellow;
+}
+.contacts1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.contacts1 a,
+.contacts2 a {
+  text-decoration: none;
+  color: yellow;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+@media all and (max-width: 600px) {
+  nav {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  li a {
+    color: #fff;
+    font-size: 15px;
+    margin-left: 30px;
+  }
+  .right h1 {
+    font-size: 30px;
+  }
+  .logo {
+    font-size: 20px;
+  }
+  /* home Stage */
+  .home-body {
+    flex-direction: column-reverse;
+    gap: 60px;
+  }
+  .home-body img {
+    height: 200px;
+    width: 200px;
+    box-shadow: 10px 10px 20px yellow;
+  }
+  .name {
+    color: yellow;
+    font-family: old;
+    text-align: center;
+  }
+  .name h1 {
+    line-height: 30px;
+    font-size: 2em;
+    white-space: wrap;
+  }
+  .name p {
+    font-size: 15px;
+    line-height: 5px;
+  }
+  .name h4 {
+    font-size: 20px;
+    text-align: center;
+  }
+  /* About Stage */
+  .context {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+    line-height: 27px;
+    white-space: wrap;
+  }
+
+  /* Contacts */
+  #contact h1 {
+    font-family: old;
+    font-size: 50px;
+    color: yellow;
+  }
+  .contacts1 {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .contacts1 a,
+  .contacts2 a {
+    text-decoration: none;
+    color: yellow;
+    font-weight: 300;
+    font-size: 30px;
+  }
+}
